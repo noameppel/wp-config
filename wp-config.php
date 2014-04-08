@@ -66,17 +66,8 @@ define('NONCE_SALT',       'generate your keys');
 $table_prefix  = 'wp_';
 define('WPLANG', '');
 
-/* MULTISITE */
-define('WP_ALLOW_MULTISITE', true);
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
-$base = '/';
-define('PATH_CURRENT_SITE', '/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
-define('WP_MEMORY_LIMIT', '120M');
-
 /* CUSTOM SETTINGS */
+define('WP_MEMORY_LIMIT', '120M');
 define('WP_POST_REVISIONS', 15);
 define('ALTERNATE_WP_CRON', false);
 define('UB_HIDE_ADMIN_MENU', true); //HIDE WPMUDEV BRANDING
