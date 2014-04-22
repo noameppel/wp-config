@@ -9,6 +9,7 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('DB_CHARSET', 'utf8');
 	define('DB_COLLATE', '');
 	define('WP_DEBUG', true);
+	define('DISALLOW_FILE_EDIT', true); // DISABLE WP FILE EDITOR
 	define('DOMAIN_CURRENT_SITE', 'localhost');
 	define('SAVEQUERIES', true ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
@@ -23,6 +24,7 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('DB_CHARSET', 'utf8');
 	define('DB_COLLATE', '');
 	define('WP_DEBUG', false);
+	define('DISALLOW_FILE_EDIT', true); // DISABLE WP FILE EDITOR
 	define('DOMAIN_CURRENT_SITE', 'staging.domain.com');
 	define('SAVEQUERIES', true ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
@@ -40,6 +42,7 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('DB_CHARSET', 'utf8');
 	define('DB_COLLATE', '');
 	define('WP_DEBUG', false);
+	define('DISALLOW_FILE_EDIT', true); // DISABLE WP FILE EDITOR
 	define('DOMAIN_CURRENT_SITE', 'domain.com');
 	define('SAVEQUERIES', false ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
