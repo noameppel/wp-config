@@ -47,8 +47,8 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('SAVEQUERIES', false ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
 	define( 'LOCALINDICATOR_TEXT', 'LIVE'); // USED BY LOCAL INDICATOR
-	define('ENVIRONMENT', 'PRODUCTION'); // FTP DETAILS
-	define("FTP_HOST", "domain.com");
+	define('ENVIRONMENT', 'PRODUCTION');
+	define("FTP_HOST", "domain.com"); // FTP DETAILS
 	define("FTP_USER", "username");
 	define("FTP_PASS", "password");
 } else {
