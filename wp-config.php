@@ -13,7 +13,10 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('DOMAIN_CURRENT_SITE', 'localhost');
 	define('SAVEQUERIES', true ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
-	define( 'LOCALINDICATOR_TEXT', 'DEVELOPMENT'); // Used by Local Indicator
+	define( 'LOCALINDICATOR_TEXT', 'DEVELOPMENT'); // USED BY LOCAL INDICATOR
+	// NOTE: Jetpack will automatically enable development mode if
+	// there isn't a period in the hostname, i.e. localhost.
+	define( 'JETPACK_DEV_DEBUG', true); // JETPACK DEVELOPMENT MODE
 	define('ENVIRONMENT', 'DEVELOPMENT');
 } elseif ( stristr( $_SERVER['SERVER_NAME'], "staging.domain.com" ) ) {
 	/* STAGING SETTINGS */
@@ -29,6 +32,9 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('SAVEQUERIES', true ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
 	define( 'LOCALINDICATOR_TEXT', 'STAGING'); // USED BY LOCAL INDICATOR
+	// NOTE: Jetpack will automatically enable development mode if
+	// there isn't a period in the hostname, i.e. localhost.
+	define( 'JETPACK_DEV_DEBUG', true); // JETPACK DEVELOPMENT MODE
 	define('ENVIRONMENT', 'STAGING');
 	define("FTP_HOST", "staging.domain.com"); // FTP DETAILS
 	define("FTP_USER", "username");
@@ -47,6 +53,9 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	define('SAVEQUERIES', false ); // USED WITH DEBUG BAR
 	define('WP_CACHE', true); // WP DEFAULT CACHING
 	define( 'LOCALINDICATOR_TEXT', 'LIVE'); // USED BY LOCAL INDICATOR
+	// NOTE: Jetpack will automatically enable development mode if
+	// there isn't a period in the hostname, i.e. localhost.
+	define( 'JETPACK_DEV_DEBUG', false); // JETPACK DEVELOPMENT MODE
 	define('ENVIRONMENT', 'PRODUCTION');
 	define("FTP_HOST", "domain.com"); // FTP DETAILS
 	define("FTP_USER", "username");
