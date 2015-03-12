@@ -36,9 +36,6 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	// there isn't a period in the hostname, i.e. localhost.
 	define( 'JETPACK_DEV_DEBUG', true); // JETPACK DEVELOPMENT MODE
 	define('ENVIRONMENT', 'STAGING');
-	define("FTP_HOST", "staging.domain.com"); // FTP DETAILS
-	define("FTP_USER", "username");
-	define("FTP_PASS", "password");
 } elseif ( stristr( $_SERVER['SERVER_NAME'], "domain.com" ) ) {
 	/* PRODUCTION SETTINGS */
 	define('DB_NAME', 'name');
@@ -57,9 +54,6 @@ if( stristr( $_SERVER['SERVER_NAME'], "localhost" ) ) {
 	// there isn't a period in the hostname, i.e. localhost.
 	define( 'JETPACK_DEV_DEBUG', false); // JETPACK DEVELOPMENT MODE
 	define('ENVIRONMENT', 'PRODUCTION');
-	define("FTP_HOST", "domain.com"); // FTP DETAILS
-	define("FTP_USER", "username");
-	define("FTP_PASS", "password");
 } else {
 	die('Please check wp-config.php file for correct SERVER_NAME settings.');
 }
