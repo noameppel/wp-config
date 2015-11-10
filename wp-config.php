@@ -65,7 +65,7 @@ if( stristr( $_SERVER['SERVER_NAME'], "domain.dev" ) ) {
 }
 
 //SHARED CONFIG VALUES
-$table_prefix  = 'get_';
+$table_prefix  = 'wp_';
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 define('WPLANG', '');
